@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabernacle de La Foi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="logo">Tabernacle <span>de la Foi</span></div>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#academie">Académie</a>
+            <a href="#priere">Prière</a>
+        </nav>
+        <button class="btn-offrande" onclick="document.getElementById('offrande').scrollIntoView({behavior:'smooth'})">Offrande</button>
+        <button class="burger-btn" id="burgerBtn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#academie">Académie</a>
+        <a href="#priere">Prière</a>
+        <button class="btn-offrande" onclick="document.getElementById('offrande').scrollIntoView({behavior:'smooth'})">Offrande</button>
+    </div>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="accueil">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-label">Centre Évangélique</div>
+                <h1>Soyons des Hommes<br>selon le <em>cœur de Dieu</em></h1>
+                <div class="hero-verse">
+                    « Ne t'ai-je pas dit que, si tu crois,<br>tu verras la gloire de Dieu ? »
+                    <span>Jean, 11:40</span>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Défiler</span>
+            </div>
+        </section>
+
+        <!-- À PROPOS -->
+        <section class="apropos" id="apropos">
+            <div class="apropos-inner">
+                <div class="section-label">Notre histoire</div>
+                <h2>À propos</h2>
+                <h3>Centre Évangélique Foi et Merveilles</h3>
+                <div class="apropos-divider"></div>
+                <p>
+                    Depuis son ouverture le 05 octobre 2005, le Centre Évangélique Foi et Merveilles porte une vision claire : amener les hommes et les femmes à croire afin de voir la gloire de Dieu se manifester (Jean 11:40).
+                </p>
+                <p>
+                    Notre église est un lieu de salut, de transformation et d'espérance. Fidèles au mandat de Christ, nous annonçons l'Évangile pour faire des disciples, nous enseignons la Parole pour affermir les croyants, nous intercédons avec persévérance et nous agissons avec compassion à travers des œuvres sociales concrètes.
+                </p>
+                <p>
+                    Le Centre Évangélique Foi et Merveilles est une communauté vivante, missionnaire et engagée, appelée à impacter les vies, les familles et la société par la puissance de la foi et l'amour de Jésus-Christ.
+                </p>
+            </div>
+        </section>
+
+        <!-- ACADÉMIE -->
+        <section class="academie" id="academie">
+            <div class="academie-header">
+                <div class="section-label">Galerie</div>
+                <h2>Académie</h2>
+            </div>
+            <div class="slider-wrapper">
+                <button class="slider-btn" id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="gallery" id="gallery">
+                    <div class="gallery-item">
+                        <img src="i1.jpg" alt="Académie 1" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><i class=\'fa-solid fa-church\'></i></div>'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="i2.jpg" alt="Académie 2" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><i class=\'fa-solid fa-book-bible\'></i></div>'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="i3.jpg" alt="Académie 3" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><i class=\'fa-solid fa-cross\'></i></div>'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="i4.jpg" alt="Académie 4" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><i class=\'fa-solid fa-hands-praying\'></i></div>'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="i5.jpg" alt="Académie 5" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><i class=\'fa-solid fa-dove\'></i></div>'">
+                    </div>
+                </div>
+                <button class="slider-btn" id="next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- PRIÈRE -->
+        <section class="priere" id="priere">
+            <div class="section-label">Calendrier spirituel</div>
+            <h2>Nos Jours de Prière</h2>
+            <div class="priere-grid">
+                <div class="priere-card">
+                    <div class="priere-img-wrap">
+                        <img src="image1.webp" alt="Prière du mardi">
+                    </div>
+                    <div class="priere-body">
+                        <div class="priere-icon"><i class="fa-solid fa-moon"></i></div>
+                        <p>Prière chaque <strong>Mardi</strong> de 18h à 20h</p>
+                    </div>
+                </div>
+                <div class="priere-card">
+                    <div class="priere-img-wrap">
+                        <img src="image2.webp" alt="Prière pour les malades">
+                    </div>
+                    <div class="priere-body">
+                        <div class="priere-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                        <p>Intercession pour les malades et tout autre besoin</p>
+                    </div>
+                </div>
+                <div class="priere-card">
+                    <div class="priere-img-wrap">
+                        <img src="image3.webp" alt="Culte du dimanche">
+                    </div>
+                    <div class="priere-body">
+                        <div class="priere-icon"><i class="fa-solid fa-sun"></i></div>
+                        <p><strong>Dimanche</strong> — Culte d'adoration et de la Parole</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFRANDE -->
+        <section class="offrande" id="offrande">
+            <div class="section-label">Donner</div>
+            <h2>Dîme & Offrande</h2>
+            <div class="offrande-grid">
+                <div class="offrande-card">
+                    <img src="orangeMoney.png" alt="Orange Money" class="offrande-logo">
+                    <div class="offrande-info">
+                        <p>Orange Money</p>
+                        <p>*144# → 64-15-33-09</p>
+                    </div>
+                </div>
+                <div class="offrande-card">
+                    <div class="offrande-logo-wave">W</div>
+                    <div class="offrande-info">
+                        <p>Wave</p>
+                        <p>64-15-33-09</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">Tabernacle <span>de la Foi · 2026</span></div>
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1BjYE7Agt1/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/tabernacledelafoi?igsh=djFzaWE3bDcyMThk" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@la.cit.des.mervei?_r=1&_t=ZM-91VnN2sUJ1H" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <p class="footer-copy">Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
